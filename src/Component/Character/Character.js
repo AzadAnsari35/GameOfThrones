@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { connect } from "react-redux";
 import { loadCharacter } from "../../actions/character"
-import MainPage from '../MainPage'
+import MainCharacterPage from './MainCharacterPage'
 
 const Character = ({ character: { character, loading }, match, loadCharacter }) => {
 
@@ -14,7 +14,7 @@ const Character = ({ character: { character, loading }, match, loadCharacter }) 
 
     return (
         <div>
-            <MainPage obj={character} loading={loading} />
+            <MainCharacterPage obj={character} loading={loading} />
         </div>
     )
 }

@@ -5,7 +5,7 @@ import HomeIcon from '@material-ui/icons/Home';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import { useHistory } from 'react-router-dom'
 
-const Character = ({ obj, loading }) => {
+const MainPageHouse = ({ obj, loading }) => {
 
     const classes = useStyles();
     const history = useHistory()
@@ -138,4 +138,4 @@ const useStyles = makeStyles((theme) => createStyles({
     }
 
 }))
-export default Character
+export default MainPageHouse

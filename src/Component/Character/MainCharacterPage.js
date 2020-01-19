@@ -1,11 +1,11 @@
 import React from 'react'
 import { createStyles, makeStyles, Typography, Button } from '@material-ui/core';
-import Spinner from '../Component/Spinner'
+import Spinner from '../Spinner'
 import HomeIcon from '@material-ui/icons/Home';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import { useHistory } from 'react-router-dom'
 
-const Character = ({ obj, loading }) => {
+const MainCharacterPage = ({ obj, loading }) => {
 
     const classes = useStyles();
     const history = useHistory()
@@ -169,4 +169,4 @@ const useStyles = makeStyles((theme) => createStyles({
     }
 
 }))
-export default Character
+export default MainCharacterPage

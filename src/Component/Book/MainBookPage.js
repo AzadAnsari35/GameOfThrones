@@ -55,7 +55,7 @@ const MainBookPage = ({ obj, loading }) => {
                         <Typography variant="body1">
                             Released : {obj.released || 'Not Present'}
                         </Typography>
-                        {obj.authors && obj.authors.slice(0, 3).map((cur, ind) => <Typography variant="body" >
+                        {obj.authors && obj.authors.slice(0, 3).map((cur, ind) => <Typography variant="body" key={ind} >
                             Author {ind + 1} : {cur}
                         </Typography>
                         )}
